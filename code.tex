@@ -1,0 +1,36 @@
+%
+% version 1.0
+% This package aims at make code easy to typeset by usinc \code environment.
+% The \code environment makes \TeX obey breaks tabs and use a typewriter font.
+% It also provides a \comment command to add "//" comment indicators and move the following text to the right of the line which is onl to be used at the end of a line of code.
+%
+\newdimen\codetab
+\codetab\parindent
+{
+	\catcode`\^^M=13%
+	\global\def^^M{%
+		\par%
+	}%
+}
+{
+	\catcode`\^^I=13
+        \global\def^^I{
+                \hskip\codetab
+        }%
+}
+\def\code{
+	\parindent0pt
+	\everypar{\tt}
+	\def\{{
+		\char123
+	}
+	\def\}{
+		\char125
+	}
+	\def\comment{
+		\rm\dotfill//%
+	}%
+	\catcode`\^^M=13%
+	\catcode`\^^I=13%
+}%
+% TODO \code doesnt work if ^^M or ^^I are redefined before.
