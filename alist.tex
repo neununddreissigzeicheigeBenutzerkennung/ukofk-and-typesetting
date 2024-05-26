@@ -1,0 +1,61 @@
+% Script: list.tex
+% Purpose: Defines a custom list environment (\list) that allows for flexible formatting of list elements, including the option to automatically number them.
+% Author: [ukofk]
+
+% Define \newdimen commands outside of \list to avoid redefinition
+\newdimen\bulletwidth % Define dimension to measure the width of bullet points
+\newdimen\bulletswidth % Define dimension to store the maximum bullet width
+
+% Define \list environment
+\def\list#1#2{%
+  % Define \append macro to append to the control sequence
+  \def\append##1##2{%
+    \expandafter\def\expandafter##1\expandafter{##1##2}%
+  }%
+
+  % Define \curcon to store the concatenated list of all arguments
+  \def\curcon{}%
+
+  % Define \precon to store the concatenated list of all but the last argument
+  \def\precon{}%
+
+  % Define \conlen to measure the width of the current argument and update bulletwidth
+  \def\conlen##1{%
+    % Store the previous context in \precon
+    \expandafter\def\expandafter\precon\expandafter{\curcon}%
+    % Append the current argument to \curcon
+    \append\curcon{##1}%
+    % Measure the width of \curcon
+    \setbox0=\hbox{\curcon}%
+    \bulletwidth=\wd0
+    % Measure the width of \precon and subtract from \bulletwidth
+    \setbox0=\hbox{\precon}%
+    \advance\bulletwidth by -\wd0
+  }%
+
+  % Calculate maximum bullet width
+  {\def\item##1{%
+    \conlen{#1}%
+    % Update \bulletswidth if current bullet width is greater
+    \ifdim\bulletwidth>\bulletswidth%
+      \bulletswidth\bulletwidth%
+    \fi%
+  }%
+  #2% Print the content of the list
+  % Redefine \item with indentation
+  {\def\item##1{%
+    \noindent#1\vtop{\advance\hsize-\bulletswidth\noindent##1}\par
+  }#2}}
+}
+
+%%Set initial value for list counter
+ %\newcount\listcount
+
+%%Example usage of \list with automatic numbering
+ %\list{\advance\listcount by 1 \number\listcount.\ }{%
+ %  \item{First item}
+ %  \item{Second item with longer text}
+ %  \item{Third item}
+ %}
+
+ %\bye
