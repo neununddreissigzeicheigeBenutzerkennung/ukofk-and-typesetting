@@ -1,0 +1,27 @@
+\catcode`^^c3=13
+\catcode`^^84=11
+\catcode`^^a4=11
+\catcode`^^96=11
+\catcode`^^b6=11
+\catcode`^^9c=11
+\catcode`^^bc=11
+\catcode`^^9f=11
+
+\def^^c3#1{%
+    \ifx#1^^84\"A\fi
+    \ifx#1^^a4\"a\fi
+    \ifx#1^^96\"O\fi
+    \ifx#1^^b6\"o\fi
+    \ifx#1^^9c\"U\fi
+    \ifx#1^^bc\"u\fi
+    \ifx#1^^9f\ss\fi
+}
+
+\def\UmlauteText{
+    \catcode`^^c3=13
+}
+
+\def\UmlauteFunktion{
+    \catcode`^^c3=11
+}
+\UmlauteText
