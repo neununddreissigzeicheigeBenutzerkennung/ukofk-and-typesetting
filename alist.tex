@@ -1,7 +1,7 @@
 \newdimen\bulletwidth
 \newdimen\bulletswidth
 
-\def\list#1#2{%
+\def\list#1#2{{%
   \def\append##1##2{%
     \expandafter\def\expandafter##1\expandafter{##1##2}%
   }%
@@ -31,10 +31,10 @@
   {%
 
   \def\item##1{%
-    \noindent#1\vtop{\advance\hsize-\bulletswidth\noindent##1}\par
+    \noindent#1\vtop{\strut\advance\hsize-\bulletswidth\noindent##1\strut}\par
   }
 
   #2}}
-}
+}}
 
 %TODO improve the spacing between vtops
