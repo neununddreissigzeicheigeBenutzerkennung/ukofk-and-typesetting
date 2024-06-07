@@ -1,4 +1,4 @@
-%%% This package aims to provide a versitile \list controll sequence which takes custom \bullet's (#1) and then takes care of spacing for the \item's in #2. For more detailled information view the example document.
+%%% This package aims to provide a versitile \list controll sequence which takes custom \lbullet's (#1) and then takes care of spacing for the \item's in #2. For more detailled information view the example document.
 %%% A  few extra controll sequences where used to achive \list's functionality which if not helpfull may at least be interesting to some and are thus also shown off in the example document.
 
 % This dimension is for keeping track of individual bullet's width.
@@ -35,26 +35,26 @@
 }%
 %%
 \def\list#1#2{{%
+  %TODO Page breaks are undesired in lists
   % This controll sequence is used to store the content of bullet points.
-  \def\bullet{#1}%
-
+  \def\lbullet{#1}\def\markierung{}%
+%
   %% This controll sequence will create list items and set preopper bullet points. Here it is used to calculate the width of the bullet points and thus the appropriate indentation.
   \def\item##1{%
-    \contextwidth{\bulletwidth}{\bullet}%
-    \showthe\bulletswidth\showthe\bulletwidth
+    \contextwidth{\bulletwidth}{\lbullet}%
+    \showthe\bulletswidth\showthe\bulletwidth%TODO unfortunatly necessary becaus \ifdim won't work otherwise (don't know why please help)
     \ifdim\bulletwidth>\bulletswidth%
-      \bulletswidth\bulletwidth\the\bulletswidth%
+      \immediate\bulletswidth\bulletwidth\the\bulletswidth%
     \fi%
-    \showthe\bulletswidth
+    \showthe\bulletswidth%TODO unfortunatly necessary becaus \ifdim won't work otherwise (don't know why please help)
   }%
   \setbox0\hbox{#2\global\transcendebullets\bulletswidth}\bulletswidth\transcendebullets%
   {%
     %% This controll sequence creates list items and applys bullets to them.
     \def\item##1{%
-      %\noindent\bullet%
+      %\noindent\lbullet%
       \noindent%
-      \bullet%
-      %\vrule width\bulletswidth height 3pt%
+      \lbullet%
       \hfill%
       \vtop{%
         \noindent\strut%

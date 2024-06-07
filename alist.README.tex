@@ -1,0 +1,122 @@
+\input alist.tex
+\hoffset-.54cm
+\voffset-.54cm
+\hsize17cm
+\vsize25.07cm
+\def\\{\char92\relax}\def\{{\char123\relax}\def\}{\char125\relax}\def\#{\char35\relax}
+\noindent This document tries to show how the package alist.tex may be used
+\bigskip
+\noindent coppy
+\smallskip
+The controll sequence {\tt\\coppy} coppies the {\it definition} of the {\it controll sequence} in {\tt\#2} and changes the {\it definition} of the {\it controll sequence} in {\tt\#1}.\hfil\break
+{\tt\\def\\a\{a\}\hfil\break
+\\def\\b\{b\}\hfil\break
+\\coppy\\a\\b\hfil\break
+\\a} $\rightarrow$ b\hfil\break
+Note that  since the {\it definition} is actually copied it stays the same even if the {\it controll sequence} it was copied from is redefined.\hfil\break
+{\tt\\def\\b\{c\}\hfil\break
+\\a} $\rightarrow$ b\hfil\break
+In contrast if you were to just redefine {\tt\\a} as {\tt\\b} its value would be bound to the {\it definition} of {\tt\\b}\hfil\break
+{\tt\\def\\a\{\\b\}\hfil\break
+\\a\hbox{ $\rightarrow$ c}\hfil\break
+\\def\\b\{d\}\hfil\break
+\\a} $\rightarrow$ d\hfil\break
+You can also coppy a {\it controll sequence}'s {\it definition} into itself.\hfil\break
+{\tt\\coppy\\a\\a\hfil\break
+\\a} $\rightarrow$ d
+\medskip
+\noindent append
+\smallskip
+The controll sequence {\tt\\append} appends the{\it definition} of the {\it controll sequence} in {\tt\#2} to the end of the {\it definition} of the {\it controll sequence} in {\tt\#1}.\hfil\break
+{\tt\\def\\a\{a\}\hfil\break
+\\def\\b\{b\}\hfil\break
+\\append\\a\\b\hfil\break
+\\a} $\rightarrow$ ab\hfil\break
+You can also append a {\it controll sequence}'s {\it definition} to itself.\hfil\break
+{\tt\\append\\a\\a\hfil\break
+\\a} $\rightarrow$ abab
+\medskip
+\noindent contextwidth
+\smallskip
+The {\it controll sequence} {\tt\\contextwidth} takes a {\tt\\dimen} register in{\tt\#1} and anything in{\tt\#2}. It then stores the width {\tt\#2} would have, were it written next to the arguments this controllsequence previously accepted in {\tt\#2}.\hfil\break
+{\tt\\newdimen\\dimena\hfil\break
+\\newdimen\\dimenb\hfil\break
+\\contextwidth\{\\dimena\}\{\\advance\\dimenb10pt\}\hfil\break
+\\the\\dimena\hbox{ $\rightarrow$ 0pt}\hfil\break
+\\contextwidth\{\\dimena\}\{\\vrule width\\dimenb\}\hfil\break
+\\the\\dimena} $\rightarrow$ 10pt
+\bigskip
+\noindent list
+\smallskip
+The {\it controll sequence} {\tt\\list} provides an ajustable method of typesetting lists it's argument {\tt\#1} defines the bullet's to be used for the content given in {\tt\#2}. The simplest form of list only uses {\tt\\item}'s. Thesse are automatically aligned behind the specified bullets.
+{\tt\\list\{-\\ \}\{\hfil\break
+\\item\{This is the content of the first item.\}\hfil\break
+\\item\{This is the content of the second item.\hfil\break
+Items may consist of multiple rows.\hfil\break
+For a text of sufficient length I had to strain my imagination.\}\}\hfil\break}
+The previous code produces the following list:\hfil\break
+\list{-\ }{
+\item{This is the content of the first item.}
+\item{This is the content of the second item. Items may consist of multiple rows. For a text of sufficient length I had to strain my imagination.}}
+\noindent{\tt\\bullet} is defined such that bullets may be influenced by previous ones in the same list. Bullets may also be redefined within a list. This can happen either in bullet's or inbetween items. The content of items are encapsulated and can therefore not influence {\tt\\bullet}.\hfil\break
+{\tt\\newcount\\bulletcount\hfil\break
+\\list\{\\advance\\bulletcount1 \\number\\bulletcount)\\ \}\{\hfil\break
+\\item\{Using this method one can number items.\hfil\break
+This item is labeled the first.\}\hfil\break
+\\item\{This item is labeled secont.\hfil\break
+The number convieniently changes without manual any alteration.\}\hfil\break
+\{\\def\\bullet\{\$\\bullet\$\\ \}\hfil\break
+\\item\{Bullets may also be redefined inbetween any two items.\}\}\hfil\break
+\\item\{When counting\}\hfil\break
+\\item\{high enough\}\hfil\break
+\\item\{you will see,\}\hfil\break
+\\item\{that\}\hfil\break
+\\item\{the list\}\hfil\break
+\\item\{automatically\}\hfil\break
+\\item\{choses\}\hfil\break
+\\item\{the appropriate spacing.\}\}}\hfil\break
+The previous code produces the following list:\hfil\break
+\newcount\bulletcount
+\list{\advance\bulletcount1 \number\bulletcount)\ }{
+\item{Using this method one can number items.
+This item is labeled the first.}
+\item{This item is labeled second.
+It's number conviniently increased without extra work.}
+{\def\lbullet{$\bullet$\ }
+\item{Bullets may also be redefined inbetween any two items.}}
+\item{When counting}
+\item{high enoug}
+\item{you will see,}
+\item{that}
+\item{the list}
+\item{automatically}
+\item{choses}
+\item{the appropriate spacing.}
+\def\lbullet{}
+\noindent One can't just redefine {\tt\\bullet} inbetween {\tt\\item}'s but also put regular text.\hfil\break
+{\tt\\list\{-\\ \}\{\hfil\break
+\\item\{The text below this item is not an item itself.\}\hfil\break
+\\noindent This is not an item\\hfil\\break\hfil\break
+\\item\{The text above this item is not an item itself.\}\hfil\break
+\}}\hfil\break
+The previous code produces the following list:\hfil\break
+\list{-\ }{
+\item{The text below this item is not an item itself.}
+\noindent This is not an item.\hfil\break
+\item{The Text above this item is not an item itself.}}
+Lists can also be nested in other lists.\hfil\break
+{\tt\\list\{\$\\bullet\$\\ \}\{\hfil\break
+\\item\{\\list\{-\\ \}\{\par
+\hskip.5\parindent\\item\{Some text.\}\par
+\hskip.5\parindent\\item\{\\dots\}\hfil\break
+\}\}\hfil\break
+\\item\{Second item.\}\}}\hfil\break
+The previous code produces the following list:\hfil\break
+\list{$\bullet$\ }{
+\item{\list{-\ }{
+  \item{Some text.}
+  \item{\dots}
+}}
+\item{Second item.}}
+\bye
+

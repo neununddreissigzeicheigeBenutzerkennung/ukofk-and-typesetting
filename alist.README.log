@@ -1,0 +1,253 @@
+This is TeX, Version 3.141592653 (TeX Live 2024/Arch Linux) (preloaded format=tex 2024.6.1)  7 JUN 2024 15:14
+**alist.README.tex
+(./alist.README.tex (./alist.tex
+\bulletwidth=\dimen16
+\bulletswidth=\dimen17
+\transcendebullets=\dimen18
+)
+> 0.0pt.
+\item ...width }{\lbullet }\showthe \bulletswidth 
+                                                  \showthe \bulletwidth \ifd...
+<argument> ...s is the content of the first item.}
+                                                   \item {This is the conten...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.60 ...t length I had to strain my imagination.}}
+                                                  
+? r
+OK, entering \nonstopmode...
+> 6.66666pt.
+\item ...wthe \bulletswidth \showthe \bulletwidth 
+                                                  \ifdim \bulletwidth >\bull...
+<argument> ...s is the content of the first item.}
+                                                   \item {This is the conten...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.60 ...t length I had to strain my imagination.}}
+                                                  
+
+> 6.66666pt.
+\item ...\bulletswidth \fi \showthe \bulletswidth 
+                                                  
+<argument> ...s is the content of the first item.}
+                                                   \item {This is the conten...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.60 ...t length I had to strain my imagination.}}
+                                                  
+
+> 6.66666pt.
+\item ...width }{\lbullet }\showthe \bulletswidth 
+                                                  \showthe \bulletwidth \ifd...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.60 ...t length I had to strain my imagination.}}
+                                                  
+
+> 6.66666pt.
+\item ...wthe \bulletswidth \showthe \bulletwidth 
+                                                  \ifdim \bulletwidth >\bull...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.60 ...t length I had to strain my imagination.}}
+                                                  
+
+> 6.66666pt.
+\item ...\bulletswidth \fi \showthe \bulletswidth 
+                                                  
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.60 ...t length I had to strain my imagination.}}
+                                                  
+
+\bulletcount=\count26
+Runaway argument?
+{ \item {Using this method one can number items. This item is labeled\ETC.
+! Paragraph ended before \list was complete.
+<to be read again> 
+                   \par 
+l.109 \\item\{\\list\{-\\ \}\{\par
+                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--109
+
+
+\hbox(0.0+0.0)x483.69684
+.\glue(\rightskip) 0.0
+
+[1]
+! Too many }'s.
+l.113 \\item\{Second item.\}\}}
+                               \hfil\break
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+> 0.0pt.
+\item ...width }{\lbullet }\showthe \bulletswidth 
+                                                  \showthe \bulletwidth \ifd...
+<argument> ...\item {Some text.} \item {\dots } }}
+                                                   \item {Second item.}
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.120 \item{Second item.}}
+                          
+
+> 8.33334pt.
+\item ...wthe \bulletswidth \showthe \bulletwidth 
+                                                  \ifdim \bulletwidth >\bull...
+<argument> ...\item {Some text.} \item {\dots } }}
+                                                   \item {Second item.}
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.120 \item{Second item.}}
+                          
+
+> 8.33334pt.
+\item ...\bulletswidth \fi \showthe \bulletswidth 
+                                                  
+<argument> ...\item {Some text.} \item {\dots } }}
+                                                   \item {Second item.}
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.120 \item{Second item.}}
+                          
+
+> 8.33334pt.
+\item ...width }{\lbullet }\showthe \bulletswidth 
+                                                  \showthe \bulletwidth \ifd...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.120 \item{Second item.}}
+                          
+
+> 8.33334pt.
+\item ...wthe \bulletswidth \showthe \bulletwidth 
+                                                  \ifdim \bulletwidth >\bull...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.120 \item{Second item.}}
+                          
+
+> 8.33334pt.
+\item ...\bulletswidth \fi \showthe \bulletswidth 
+                                                  
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.120 \item{Second item.}}
+                          
+
+> 8.33334pt.
+\item ...width }{\lbullet }\showthe \bulletswidth 
+                                                  \showthe \bulletwidth \ifd...
+<argument>  \item {Some text.}
+                               \item {\dots } 
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+
+\item ... \strut \advance \hsize -\bulletswidth #1
+                                                  \strut }\par 
+<argument> ...\item {Some text.} \item {\dots } }}
+                                                   \item {Second item.}
+\list ...\hsize -\bulletswidth ##1\strut }\par }#2
+                                                  }}
+l.120 \item{Second item.}}
+                          
+
+> 6.66666pt.
+\item ...wthe \bulletswidth \showthe \bulletwidth 
+                                                  \ifdim \bulletwidth >\bull...
+<argument>  \item {Some text.}
+                               \item {\dots } 
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+
+\item ... \strut \advance \hsize -\bulletswidth #1
+                                                  \strut }\par 
+<argument> ...\item {Some text.} \item {\dots } }}
+                                                   \item {Second item.}
+\list ...\hsize -\bulletswidth ##1\strut }\par }#2
+                                                  }}
+l.120 \item{Second item.}}
+                          
+
+> 8.33334pt.
+\item ...\bulletswidth \fi \showthe \bulletswidth 
+                                                  
+<argument>  \item {Some text.}
+                               \item {\dots } 
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+
+\item ... \strut \advance \hsize -\bulletswidth #1
+                                                  \strut }\par 
+<argument> ...\item {Some text.} \item {\dots } }}
+                                                   \item {Second item.}
+\list ...\hsize -\bulletswidth ##1\strut }\par }#2
+                                                  }}
+l.120 \item{Second item.}}
+                          
+
+> 8.33334pt.
+\item ...width }{\lbullet }\showthe \bulletswidth 
+                                                  \showthe \bulletwidth \ifd...
+<argument>  \item {Some text.} \item {\dots }
+                                              
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+
+\item ... \strut \advance \hsize -\bulletswidth #1
+                                                  \strut }\par 
+<argument> ...\item {Some text.} \item {\dots } }}
+                                                   \item {Second item.}
+\list ...\hsize -\bulletswidth ##1\strut }\par }#2
+                                                  }}
+l.120 \item{Second item.}}
+                          
+
+> 6.66666pt.
+\item ...wthe \bulletswidth \showthe \bulletwidth 
+                                                  \ifdim \bulletwidth >\bull...
+<argument>  \item {Some text.} \item {\dots }
+                                              
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+
+\item ... \strut \advance \hsize -\bulletswidth #1
+                                                  \strut }\par 
+<argument> ...\item {Some text.} \item {\dots } }}
+                                                   \item {Second item.}
+\list ...\hsize -\bulletswidth ##1\strut }\par }#2
+                                                  }}
+l.120 \item{Second item.}}
+                          
+
+> 8.33334pt.
+\item ...\bulletswidth \fi \showthe \bulletswidth 
+                                                  
+<argument>  \item {Some text.} \item {\dots }
+                                              
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+
+\item ... \strut \advance \hsize -\bulletswidth #1
+                                                  \strut }\par 
+<argument> ...\item {Some text.} \item {\dots } }}
+                                                   \item {Second item.}
+\list ...\hsize -\bulletswidth ##1\strut }\par }#2
+                                                  }}
+l.120 \item{Second item.}}
+                          
+
+[2] )
+Output written on alist.README.dvi (2 pages, 4608 bytes).
