@@ -29,9 +29,9 @@
   \copy\previouscontext\currentcontext%
   \append\currentcontext{#2}%
   \setbox0\hbox{\currentcontext}%
-  #1\wd0%
+  \immediate#1\wd0%
   \setbox0\hbox{\previouscontext}%
-  \advance#1-\wd0%
+  \immediate\advance#1-\wd0%
 }%
 %%
 \def\list#1#2{{%
@@ -41,12 +41,11 @@
 %
   %% This controll sequence will create list items and set preopper bullet points. Here it is used to calculate the width of the bullet points and thus the appropriate indentation.
   \def\item##1{%
-    \contextwidth{\bulletwidth}{\lbullet}%
-    \showthe\bulletswidth\showthe\bulletwidth%TODO unfortunatly necessary becaus \ifdim won't work otherwise (don't know why please help)
+    \immediate\contextwidth{\bulletwidth}{\lbullet}%
+    \rlap{\the\bulletwidth}%FIXME unfortunatly necessary becaus \ifdim won't work otherwise (don't know why please help)
     \ifdim\bulletwidth>\bulletswidth%
-      \immediate\bulletswidth\bulletwidth\the\bulletswidth%
+      \bulletswidth\bulletwidth%
     \fi%
-    \showthe\bulletswidth%TODO unfortunatly necessary becaus \ifdim won't work otherwise (don't know why please help)
   }%
   \setbox0\hbox{#2\global\transcendebullets\bulletswidth}\bulletswidth\transcendebullets%
   {%
