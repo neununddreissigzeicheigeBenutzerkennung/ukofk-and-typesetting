@@ -12,8 +12,8 @@
 % This controll sequence is for keeping track of the arguments #2 of contextwidth up to the previous one.
 \def\previouscontext{}%
 
-%% This controll sequence coppys the content of the controll sequence #2 to the definition of the controll sequence #1.
-\def\coppy#1#2{%
+%% This controll sequence copys the content of the controll sequence #2 to the definition of the controll sequence #1.
+\def\copy#1#2{%
   \expandafter\def\expandafter#1\expandafter{#2}%
 }%
 %% This controll sequence apeends the content of the controll sequence #2 to the definition of the controll sequence #1.
@@ -26,7 +26,7 @@
 }
 %% This controll sequence coputes the length of #2 in context with it's previous values and store it in dimen #1.
 \def\contextwidth#1#2{%
-  \coppy\previouscontext\currentcontext%
+  \copy\previouscontext\currentcontext%
   \append\currentcontext{#2}%
   \setbox0\hbox{\currentcontext}%
   #1\wd0%

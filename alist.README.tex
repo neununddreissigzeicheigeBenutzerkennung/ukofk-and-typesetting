@@ -6,14 +6,14 @@
 \def\\{\char92\relax}\def\{{\char123\relax}\def\}{\char125\relax}\def\#{\char35\relax}
 \noindent This document tries to show how the package alist.tex may be used
 \bigskip
-\noindent coppy
+\noindent copy
 \smallskip
-The controll sequence {\tt\\coppy} coppies the {\it definition} of the {\it controll sequence} in {\tt\#2} and changes the {\it definition} of the {\it controll sequence} in {\tt\#1}.\hfil\break
+The control sequence {\tt\\copy} copies the {\it definition} of the {\it control sequence} in {\tt\#2} and changes the {\it definition} of the {\it control sequence} in {\tt\#1}.\hfil\break
 {\tt\\def\\a\{a\}\hfil\break
 \\def\\b\{b\}\hfil\break
-\\coppy\\a\\b\hfil\break
+\\copy\\a\\b\hfil\break
 \\a} $\rightarrow$ b\hfil\break
-Note that  since the {\it definition} is actually copied it stays the same even if the {\it controll sequence} it was copied from is redefined.\hfil\break
+Note that  since the {\it definition} is actually copied it stays the same even if the {\it control sequence} it was copied from is redefined.\hfil\break
 {\tt\\def\\b\{c\}\hfil\break
 \\a} $\rightarrow$ b\hfil\break
 In contrast if you were to just redefine {\tt\\a} as {\tt\\b} its value would be bound to the {\it definition} of {\tt\\b}\hfil\break
@@ -21,24 +21,24 @@ In contrast if you were to just redefine {\tt\\a} as {\tt\\b} its value would be
 \\a\hbox{ $\rightarrow$ c}\hfil\break
 \\def\\b\{d\}\hfil\break
 \\a} $\rightarrow$ d\hfil\break
-You can also coppy a {\it controll sequence}'s {\it definition} into itself.\hfil\break
-{\tt\\coppy\\a\\a\hfil\break
+You can also copy a {\it control sequence}'s {\it definition} into itself.\hfil\break
+{\tt\\copy\\a\\a\hfil\break
 \\a} $\rightarrow$ d
 \medskip
 \noindent append
 \smallskip
-The controll sequence {\tt\\append} appends the{\it definition} of the {\it controll sequence} in {\tt\#2} to the end of the {\it definition} of the {\it controll sequence} in {\tt\#1}.\hfil\break
+The control sequence {\tt\\append} appends the{\it definition} of the {\it control sequence} in {\tt\#2} to the end of the {\it definition} of the {\it control sequence} in {\tt\#1}.\hfil\break
 {\tt\\def\\a\{a\}\hfil\break
 \\def\\b\{b\}\hfil\break
 \\append\\a\\b\hfil\break
 \\a} $\rightarrow$ ab\hfil\break
-You can also append a {\it controll sequence}'s {\it definition} to itself.\hfil\break
+You can also append a {\it control sequence}'s {\it definition} to itself.\hfil\break
 {\tt\\append\\a\\a\hfil\break
 \\a} $\rightarrow$ abab
 \medskip
 \noindent contextwidth
 \smallskip
-The {\it controll sequence} {\tt\\contextwidth} takes a {\tt\\dimen} register in{\tt\#1} and anything in{\tt\#2}. It then stores the width {\tt\#2} would have, were it written next to the arguments this controllsequence previously accepted in {\tt\#2}.\hfil\break
+The {\it control sequence} {\tt\\contextwidth} takes a {\tt\\dimen} register in{\tt\#1} and anything in{\tt\#2}. It then stores the width {\tt\#2} would have, were it written next to the arguments this controlsequence previously accepted in {\tt\#2}.\hfil\break
 {\tt\\newdimen\\dimena\hfil\break
 \\newdimen\\dimenb\hfil\break
 \\contextwidth\{\\dimena\}\{\\advance\\dimenb10pt\}\hfil\break
@@ -48,7 +48,7 @@ The {\it controll sequence} {\tt\\contextwidth} takes a {\tt\\dimen} register in
 \bigskip
 \noindent list
 \smallskip
-The {\it controll sequence} {\tt\\list} provides an ajustable method of typesetting lists it's argument {\tt\#1} defines the bullet's to be used for the content given in {\tt\#2}. The simplest form of list only uses {\tt\\item}'s. Thesse are automatically aligned behind the specified bullets.
+The {\it control sequence} {\tt\\list} provides an ajustable method of typesetting lists it's argument {\tt\#1} defines the bullet's to be used for the content given in {\tt\#2}. The simplest form of list only uses {\tt\\item}'s. These are automatically aligned behind the specified bullets.
 {\tt\\list\{-\\ \}\{\hfil\break
 \\item\{This is the content of the first item.\}\hfil\break
 \\item\{This is the content of the second item.\hfil\break
@@ -63,7 +63,7 @@ The previous code produces the following list:\hfil\break
 \\list\{\\advance\\bulletcount1 \\number\\bulletcount)\\ \}\{\hfil\break
 \\item\{Using this method one can number items.\hfil\break
 This item is labeled the first.\}\hfil\break
-\\item\{This item is labeled secont.\hfil\break
+\\item\{This item is labeled second.\hfil\break
 The number convieniently changes without manual any alteration.\}\hfil\break
 \{\\def\\bullet\{\$\\bullet\$\\ \}\hfil\break
 \\item\{Bullets may also be redefined inbetween any two items.\}\}\hfil\break
@@ -91,9 +91,8 @@ It's number conviniently increased without extra work.}
 \item{the list}
 \item{automatically}
 \item{choses}
-\item{the appropriate spacing.}
-\def\lbullet{}
-\noindent One can't just redefine {\tt\\bullet} inbetween {\tt\\item}'s but also put regular text.\hfil\break
+\item{the appropriate spacing.}}
+\noindent One can't just redefine {\tt\\bullet}, inbetween {\tt\\item}'s but also put regular text.\hfil\break
 {\tt\\list\{-\\ \}\{\hfil\break
 \\item\{The text below this item is not an item itself.\}\hfil\break
 \\noindent This is not an item\\hfil\\break\hfil\break

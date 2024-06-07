@@ -1,4 +1,4 @@
-This is TeX, Version 3.141592653 (TeX Live 2024/Arch Linux) (preloaded format=tex 2024.6.1)  7 JUN 2024 15:14
+This is TeX, Version 3.141592653 (TeX Live 2024/Arch Linux) (preloaded format=tex 2024.6.1)  7 JUN 2024 15:32
 **alist.README.tex
 (./alist.README.tex (./alist.tex
 \bulletwidth=\dimen16
@@ -66,30 +66,421 @@ l.60 ...t length I had to strain my imagination.}}
                                                   
 
 \bulletcount=\count26
-Runaway argument?
-{ \item {Using this method one can number items. This item is labeled\ETC.
-! Paragraph ended before \list was complete.
-<to be read again> 
-                   \par 
-l.109 \\item\{\\list\{-\\ \}\{\par
-                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
+> 0.0pt.
+\item ...width }{\lbullet }\showthe \bulletswidth 
+                                                  \showthe \bulletwidth \ifd...
+<argument> ...ms. This item is labeled the first.}
+                                                   \item {This item is label...
 
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.94 \item{the appropriate spacing.}}
+                                     
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--109
+> 12.22224pt.
+\item ...wthe \bulletswidth \showthe \bulletwidth 
+                                                  \ifdim \bulletwidth >\bull...
+<argument> ...ms. This item is labeled the first.}
+                                                   \item {This item is label...
 
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.94 \item{the appropriate spacing.}}
+                                     
 
-\hbox(0.0+0.0)x483.69684
-.\glue(\rightskip) 0.0
+> 12.22224pt.
+\item ...\bulletswidth \fi \showthe \bulletswidth 
+                                                  
+<argument> ...ms. This item is labeled the first.}
+                                                   \item {This item is label...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.94 \item{the appropriate spacing.}}
+                                     
+
+> 12.22224pt.
+\item ...width }{\lbullet }\showthe \bulletswidth 
+                                                  \showthe \bulletwidth \ifd...
+<argument> ...ently increased without extra work.}
+                                                   {\def \lbullet {$\bullet ...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.94 \item{the appropriate spacing.}}
+                                     
+
+> 12.22224pt.
+\item ...wthe \bulletswidth \showthe \bulletwidth 
+                                                  \ifdim \bulletwidth >\bull...
+<argument> ...ently increased without extra work.}
+                                                   {\def \lbullet {$\bullet ...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.94 \item{the appropriate spacing.}}
+                                     
+
+> 12.22224pt.
+\item ...\bulletswidth \fi \showthe \bulletswidth 
+                                                  
+<argument> ...ently increased without extra work.}
+                                                   {\def \lbullet {$\bullet ...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.94 \item{the appropriate spacing.}}
+                                     
+
+> 12.22224pt.
+\item ...width }{\lbullet }\showthe \bulletswidth 
+                                                  \showthe \bulletwidth \ifd...
+<argument> ... redefined inbetween any two items.}
+                                                  } \item {When counting} \i...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.94 \item{the appropriate spacing.}}
+                                     
+
+> 8.33334pt.
+\item ...wthe \bulletswidth \showthe \bulletwidth 
+                                                  \ifdim \bulletwidth >\bull...
+<argument> ... redefined inbetween any two items.}
+                                                  } \item {When counting} \i...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.94 \item{the appropriate spacing.}}
+                                     
+
+> 12.22224pt.
+\item ...\bulletswidth \fi \showthe \bulletswidth 
+                                                  
+<argument> ... redefined inbetween any two items.}
+                                                  } \item {When counting} \i...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.94 \item{the appropriate spacing.}}
+                                     
+
+> 12.22224pt.
+\item ...width }{\lbullet }\showthe \bulletswidth 
+                                                  \showthe \bulletwidth \ifd...
+<argument> ...y two items.}} \item {When counting}
+                                                   \item {high enoug} \item ...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.94 \item{the appropriate spacing.}}
+                                     
+
+> 12.22224pt.
+\item ...wthe \bulletswidth \showthe \bulletwidth 
+                                                  \ifdim \bulletwidth >\bull...
+<argument> ...y two items.}} \item {When counting}
+                                                   \item {high enoug} \item ...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.94 \item{the appropriate spacing.}}
+                                     
+
+> 12.22224pt.
+\item ...\bulletswidth \fi \showthe \bulletswidth 
+                                                  
+<argument> ...y two items.}} \item {When counting}
+                                                   \item {high enoug} \item ...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.94 \item{the appropriate spacing.}}
+                                     
+
+> 12.22224pt.
+\item ...width }{\lbullet }\showthe \bulletswidth 
+                                                  \showthe \bulletwidth \ifd...
+<argument> ...m {When counting} \item {high enoug}
+                                                   \item {you will see,} \it...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.94 \item{the appropriate spacing.}}
+                                     
+
+> 12.22224pt.
+\item ...wthe \bulletswidth \showthe \bulletwidth 
+                                                  \ifdim \bulletwidth >\bull...
+<argument> ...m {When counting} \item {high enoug}
+                                                   \item {you will see,} \it...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.94 \item{the appropriate spacing.}}
+                                     
+
+> 12.22224pt.
+\item ...\bulletswidth \fi \showthe \bulletswidth 
+                                                  
+<argument> ...m {When counting} \item {high enoug}
+                                                   \item {you will see,} \it...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.94 \item{the appropriate spacing.}}
+                                     
+
+> 12.22224pt.
+\item ...width }{\lbullet }\showthe \bulletswidth 
+                                                  \showthe \bulletwidth \ifd...
+<argument> ...m {high enoug} \item {you will see,}
+                                                   \item {that} \item {the l...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.94 \item{the appropriate spacing.}}
+                                     
+
+> 12.22224pt.
+\item ...wthe \bulletswidth \showthe \bulletwidth 
+                                                  \ifdim \bulletwidth >\bull...
+<argument> ...m {high enoug} \item {you will see,}
+                                                   \item {that} \item {the l...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.94 \item{the appropriate spacing.}}
+                                     
+
+> 12.22224pt.
+\item ...\bulletswidth \fi \showthe \bulletswidth 
+                                                  
+<argument> ...m {high enoug} \item {you will see,}
+                                                   \item {that} \item {the l...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.94 \item{the appropriate spacing.}}
+                                     
+
+> 12.22224pt.
+\item ...width }{\lbullet }\showthe \bulletswidth 
+                                                  \showthe \bulletwidth \ifd...
+<argument> ...} \item {you will see,} \item {that}
+                                                   \item {the list} \item {a...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.94 \item{the appropriate spacing.}}
+                                     
+
+> 12.22224pt.
+\item ...wthe \bulletswidth \showthe \bulletwidth 
+                                                  \ifdim \bulletwidth >\bull...
+<argument> ...} \item {you will see,} \item {that}
+                                                   \item {the list} \item {a...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.94 \item{the appropriate spacing.}}
+                                     
+
+> 12.22224pt.
+\item ...\bulletswidth \fi \showthe \bulletswidth 
+                                                  
+<argument> ...} \item {you will see,} \item {that}
+                                                   \item {the list} \item {a...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.94 \item{the appropriate spacing.}}
+                                     
+
+> 12.22224pt.
+\item ...width }{\lbullet }\showthe \bulletswidth 
+                                                  \showthe \bulletwidth \ifd...
+<argument> ... see,} \item {that} \item {the list}
+                                                   \item {automatically} \it...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.94 \item{the appropriate spacing.}}
+                                     
+
+> 12.22224pt.
+\item ...wthe \bulletswidth \showthe \bulletwidth 
+                                                  \ifdim \bulletwidth >\bull...
+<argument> ... see,} \item {that} \item {the list}
+                                                   \item {automatically} \it...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.94 \item{the appropriate spacing.}}
+                                     
+
+> 12.22224pt.
+\item ...\bulletswidth \fi \showthe \bulletswidth 
+                                                  
+<argument> ... see,} \item {that} \item {the list}
+                                                   \item {automatically} \it...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.94 \item{the appropriate spacing.}}
+                                     
+
+> 12.22224pt.
+\item ...width }{\lbullet }\showthe \bulletswidth 
+                                                  \showthe \bulletwidth \ifd...
+<argument> ...tem {the list} \item {automatically}
+                                                   \item {choses} \item {the...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.94 \item{the appropriate spacing.}}
+                                     
+
+> 12.22224pt.
+\item ...wthe \bulletswidth \showthe \bulletwidth 
+                                                  \ifdim \bulletwidth >\bull...
+<argument> ...tem {the list} \item {automatically}
+                                                   \item {choses} \item {the...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.94 \item{the appropriate spacing.}}
+                                     
+
+> 12.22224pt.
+\item ...\bulletswidth \fi \showthe \bulletswidth 
+                                                  
+<argument> ...tem {the list} \item {automatically}
+                                                   \item {choses} \item {the...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.94 \item{the appropriate spacing.}}
+                                     
+
+> 12.22224pt.
+\item ...width }{\lbullet }\showthe \bulletswidth 
+                                                  \showthe \bulletwidth \ifd...
+<argument> ...\item {automatically} \item {choses}
+                                                   \item {the appropriate sp...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.94 \item{the appropriate spacing.}}
+                                     
+
+> 12.22224pt.
+\item ...wthe \bulletswidth \showthe \bulletwidth 
+                                                  \ifdim \bulletwidth >\bull...
+<argument> ...\item {automatically} \item {choses}
+                                                   \item {the appropriate sp...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.94 \item{the appropriate spacing.}}
+                                     
+
+> 12.22224pt.
+\item ...\bulletswidth \fi \showthe \bulletswidth 
+                                                  
+<argument> ...\item {automatically} \item {choses}
+                                                   \item {the appropriate sp...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.94 \item{the appropriate spacing.}}
+                                     
+
+> 12.22224pt.
+\item ...width }{\lbullet }\showthe \bulletswidth 
+                                                  \showthe \bulletwidth \ifd...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.94 \item{the appropriate spacing.}}
+                                     
+
+> 17.22226pt.
+\item ...wthe \bulletswidth \showthe \bulletwidth 
+                                                  \ifdim \bulletwidth >\bull...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.94 \item{the appropriate spacing.}}
+                                     
+
+> 17.22226pt.
+\item ...\bulletswidth \fi \showthe \bulletswidth 
+                                                  
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.94 \item{the appropriate spacing.}}
+                                     
 
 [1]
-! Too many }'s.
-l.113 \\item\{Second item.\}\}}
-                               \hfil\break
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
+> 0.0pt.
+\item ...width }{\lbullet }\showthe \bulletswidth 
+                                                  \showthe \bulletwidth \ifd...
+<argument> ...ow this item is not an item itself.}
+                                                   \noindent This is not an ...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.105 ... above this item is not an item itself.}}
+                                                  
+
+> 6.66666pt.
+\item ...wthe \bulletswidth \showthe \bulletwidth 
+                                                  \ifdim \bulletwidth >\bull...
+<argument> ...ow this item is not an item itself.}
+                                                   \noindent This is not an ...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.105 ... above this item is not an item itself.}}
+                                                  
+
+> 6.66666pt.
+\item ...\bulletswidth \fi \showthe \bulletswidth 
+                                                  
+<argument> ...ow this item is not an item itself.}
+                                                   \noindent This is not an ...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.105 ... above this item is not an item itself.}}
+                                                  
+
+> 6.66666pt.
+\item ...width }{\lbullet }\showthe \bulletswidth 
+                                                  \showthe \bulletwidth \ifd...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.105 ... above this item is not an item itself.}}
+                                                  
+
+> 6.66666pt.
+\item ...wthe \bulletswidth \showthe \bulletwidth 
+                                                  \ifdim \bulletwidth >\bull...
+
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.105 ... above this item is not an item itself.}}
+                                                  
+
+> 6.66666pt.
+\item ...\bulletswidth \fi \showthe \bulletswidth 
+                                                  
+\list ...showthe \bulletswidth }\setbox 0\hbox {#2
+                                                  \global \transcendebullets...
+l.105 ... above this item is not an item itself.}}
+                                                  
 
 > 0.0pt.
 \item ...width }{\lbullet }\showthe \bulletswidth 
@@ -98,7 +489,7 @@ Such booboos are generally harmless, so keep going.
                                                    \item {Second item.}
 \list ...showthe \bulletswidth }\setbox 0\hbox {#2
                                                   \global \transcendebullets...
-l.120 \item{Second item.}}
+l.119 \item{Second item.}}
                           
 
 > 8.33334pt.
@@ -108,7 +499,7 @@ l.120 \item{Second item.}}
                                                    \item {Second item.}
 \list ...showthe \bulletswidth }\setbox 0\hbox {#2
                                                   \global \transcendebullets...
-l.120 \item{Second item.}}
+l.119 \item{Second item.}}
                           
 
 > 8.33334pt.
@@ -118,7 +509,7 @@ l.120 \item{Second item.}}
                                                    \item {Second item.}
 \list ...showthe \bulletswidth }\setbox 0\hbox {#2
                                                   \global \transcendebullets...
-l.120 \item{Second item.}}
+l.119 \item{Second item.}}
                           
 
 > 8.33334pt.
@@ -127,7 +518,7 @@ l.120 \item{Second item.}}
 
 \list ...showthe \bulletswidth }\setbox 0\hbox {#2
                                                   \global \transcendebullets...
-l.120 \item{Second item.}}
+l.119 \item{Second item.}}
                           
 
 > 8.33334pt.
@@ -136,7 +527,7 @@ l.120 \item{Second item.}}
 
 \list ...showthe \bulletswidth }\setbox 0\hbox {#2
                                                   \global \transcendebullets...
-l.120 \item{Second item.}}
+l.119 \item{Second item.}}
                           
 
 > 8.33334pt.
@@ -144,7 +535,7 @@ l.120 \item{Second item.}}
                                                   
 \list ...showthe \bulletswidth }\setbox 0\hbox {#2
                                                   \global \transcendebullets...
-l.120 \item{Second item.}}
+l.119 \item{Second item.}}
                           
 
 > 8.33334pt.
@@ -161,7 +552,7 @@ l.120 \item{Second item.}}
                                                    \item {Second item.}
 \list ...\hsize -\bulletswidth ##1\strut }\par }#2
                                                   }}
-l.120 \item{Second item.}}
+l.119 \item{Second item.}}
                           
 
 > 6.66666pt.
@@ -178,7 +569,7 @@ l.120 \item{Second item.}}
                                                    \item {Second item.}
 \list ...\hsize -\bulletswidth ##1\strut }\par }#2
                                                   }}
-l.120 \item{Second item.}}
+l.119 \item{Second item.}}
                           
 
 > 8.33334pt.
@@ -195,7 +586,7 @@ l.120 \item{Second item.}}
                                                    \item {Second item.}
 \list ...\hsize -\bulletswidth ##1\strut }\par }#2
                                                   }}
-l.120 \item{Second item.}}
+l.119 \item{Second item.}}
                           
 
 > 8.33334pt.
@@ -212,7 +603,7 @@ l.120 \item{Second item.}}
                                                    \item {Second item.}
 \list ...\hsize -\bulletswidth ##1\strut }\par }#2
                                                   }}
-l.120 \item{Second item.}}
+l.119 \item{Second item.}}
                           
 
 > 6.66666pt.
@@ -229,7 +620,7 @@ l.120 \item{Second item.}}
                                                    \item {Second item.}
 \list ...\hsize -\bulletswidth ##1\strut }\par }#2
                                                   }}
-l.120 \item{Second item.}}
+l.119 \item{Second item.}}
                           
 
 > 8.33334pt.
@@ -246,8 +637,8 @@ l.120 \item{Second item.}}
                                                    \item {Second item.}
 \list ...\hsize -\bulletswidth ##1\strut }\par }#2
                                                   }}
-l.120 \item{Second item.}}
+l.119 \item{Second item.}}
                           
 
 [2] )
-Output written on alist.README.dvi (2 pages, 4608 bytes).
+Output written on alist.README.dvi (2 pages, 5776 bytes).
