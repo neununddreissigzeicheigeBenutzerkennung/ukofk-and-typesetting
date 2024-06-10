@@ -82,10 +82,7 @@ The **control sequence** `\list` provides an adjustable method of typesetting li
 }
 ```
 
-The previous code produces the following list:
-
-- This is the content of the first item.
-- This is the content of the second item. Items may consist of multiple rows. For a text of sufficient length I had to strain my imagination.
+To see the output the previous code produces please view the README file (alist.README.dvi/pdf).
 
 ### Numbered Lists
 
@@ -111,19 +108,7 @@ The previous code produces the following list:
 }
 ```
 
-The previous code produces the following list:
-
-1. Using this method one can number items. This item is labeled the first.
-2. This item is labeled second. It's number conveniently increased without extra work.
-   - Bullets may also be redefined in between any two items.
-3. When counting
-4. high enough
-5. you will see,
-6. that
-7. the list
-8. automatically
-9. chooses
-10. the appropriate spacing.
+To see the output the previous code produces please view the README file (alist.README.dvi/pdf).
 
 ### Mixed Content Lists
 
@@ -136,13 +121,7 @@ You can't just redefine `\bullet` in between `\item`s but also put regular text.
 \item{The text above this item is not an item itself.}
 }
 ```
-
-The previous code produces the following list:
-
-- The text below this item is not an item itself.
-  
-  This is not an item.
-- The text above this item is not an item itself.
+To see the output the previous code produces please view the README file (alist.README.dvi/pdf).
 
 ### Nested Lists
 
