@@ -1,0 +1,68 @@
+%%% This package aims to provide a versitile \list control sequence which takes custom \lbullet's (#1) and then takes care of spacing for the \item's in #2. For more detailled information view the README file.
+%%% A  few extra control sequences where used to achive \list's functionality which if not helpfull may at least be interesting to some and are thus also present in the README file.
+
+% This dimension is for keeping track of individual bullet's width.
+\newdimen\bulletwidth%
+% This dimension is for keeping track of the maximum bullet width in a list.
+\newdimen\bulletswidth%
+% This dimension is used for transcending the borders of one \box whithout using \global.
+\newdimen\transcendebullets%
+% This controll sequence is for keeping track of the arguments #2 of contextwidth up to the current one.
+\def\currentcontext{}%
+% This controll sequence is for keeping track of the arguments #2 of contextwidth up to the previous one.
+\def\previouscontext{}%
+
+%% This controll sequence copys the content of the controll sequence #2 to the definition of the controll sequence #1.
+\def\copy#1#2{%
+  \expandafter\def\expandafter#1\expandafter{#2}%
+}%
+%% This controll sequence apeends the content of the controll sequence #2 to the definition of the controll sequence #1.
+\def\append#1#2{%
+  \expandafter\expandafter\expandafter\def%
+  \expandafter\expandafter\expandafter#1%
+  \expandafter\expandafter\expandafter{%
+    \expandafter#1#2%
+  }%
+}
+%% This controll sequence coputes the length of #2 in context with it's previous values and store it in dimen #1.
+\def\contextwidth#1#2{%
+  \copy\previouscontext\currentcontext%
+  \append\currentcontext{#2}%
+  \setbox0\hbox{\currentcontext}%
+  \immediate#1\wd0%
+  \setbox0\hbox{\previouscontext}%
+  \immediate\advance#1-\wd0%
+}%
+%%
+\def\list#1#2{{%
+  %TODO Page breaks are undesired in lists
+  % This controll sequence is used to store the content of bullet points.
+  \def\lbullet{#1}\def\markierung{}%
+%
+  %% This controll sequence will create list items and set preopper bullet points. Here it is used to calculate the width of the bullet points and thus the appropriate indentation.
+  \def\item##1{%
+    \immediate\contextwidth{\bulletwidth}{\lbullet}%
+    \rlap{\the\bulletwidth}%FIXME unfortunatly necessary becaus \ifdim won't work otherwise (don't know why please help)
+    \ifdim\bulletwidth>\bulletswidth%
+      \bulletswidth\bulletwidth%
+    \fi%
+  }%
+  \setbox0\hbox{#2\global\transcendebullets\bulletswidth}\bulletswidth\transcendebullets%
+  {%
+    %% This controll sequence creates list items and applys bullets to them.
+    \def\item##1{%
+      %\noindent\lbullet%
+      \noindent%
+      \lbullet%
+      \hfill%
+      \vtop{%
+        \noindent\strut%
+        \advance\hsize-\bulletswidth%
+        ##1%
+        \strut%
+      }%
+      \par%
+    }%
+    #2%
+  }%
+}}%
